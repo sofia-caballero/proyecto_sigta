@@ -1,0 +1,177 @@
+/* administrador.css */
+
+/* Aumentar el ancho del contenedor */
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    border-radius: 10px;
+    width: 110%;
+    margin: 0 auto;
+    max-width: 16000px;
+}
+
+.calendar-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #2c5030; 
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.calendar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000%;
+    max-width: 1100px;
+}
+
+.selected-date {
+    font-size: 22px;
+    font-weight: bold;
+    color: #34502c; 
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.events-info {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.events-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.event-item {
+    background-color: #f9f9f9;
+    border-left: 6px solid #2ecc71; /* Verde */
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.event-item strong {
+    color: #2c3e50; /* Verde oscuro */
+    font-size: 18px;
+}
+
+.no-events-message {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2ecc71; /* Verde */
+}
+
+/* Estilo moderno para el calendario inspirado en la imagen */
+.react-calendar {
+    border: none;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+.react-calendar__navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: #27ae60; /* Verde oscuro */
+    border-radius: 12px 12px 0 0;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.react-calendar__navigation button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.react-calendar__navigation button:hover {
+    background-color: #1e8449; /* Verde más oscuro al hover */
+    border-radius: 50%;
+}
+
+/* Estilo para las celdas de días con tarjetas flotantes */
+.react-calendar__tile {
+    background-color: white;
+    color: #2c5045; /* Verde grisáceo */
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    text-align: center;
+    position: relative;
+}
+
+.react-calendar__tile--now {
+    background-color: #2ecc71; /* Verde brillante para hoy */
+    color: white;
+    border-radius: 10px;
+}
+
+.react-calendar__tile--active {
+    background-color: #27ae60; /* Verde oscuro para el día activo */
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(39, 174, 96, 0.4); /* Sombra verde */
+    transform: scale(1.05);
+}
+
+.react-calendar__tile:hover {
+    background-color: #a3e4d7; /* Verde claro en hover */
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+/* Estilo para los eventos dentro de las celdas */
+.react-calendar__month-view__days__day--event {
+    background-color: #58d68d; /* Verde claro para los eventos */
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+/* Colores suaves para los días de la semana */
+.react-calendar__month-view__weekdays__weekday {
+    color: #95a5a6; /* Verde grisáceo */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Espacio adicional entre las celdas del calendario */
+.react-calendar__tile {
+    margin: 5px;
+}
+
+.react-calendar__month-view__days__day {
+    padding: 25px 10px; /* Aumenta el tamaño del área de los días */
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo de hover para los días del calendario */
+.react-calendar__tile:hover {
+    background-color: #d4efdf; /* Verde suave */
+}
+
+/* Mensajes de carga y error */
+.loading-message, .error-message {
+    font-size: 20px;
+    color: #e74c3c; /* Rojo para mensajes de error */
+    text-align: center;
+    margin-top: 20px;
+}

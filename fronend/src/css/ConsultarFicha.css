@@ -1,0 +1,123 @@
+/* ConsultarFicha.css */
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el input y el botón */
+}
+
+.search-bar input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1; /* Permitir que el input use todo el espacio disponible */
+    max-width: 300px; /* Limitar el ancho del input */
+}
+
+.search-button {
+    background-color: #28a745; /* Color verde */
+    border: none;
+    color: white;
+    padding: 8px 12px; /* Ajustar padding para que el botón no sea tan grande */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px; /* Tamaño del texto más pequeño */
+}
+
+.search-button:hover {
+    background-color: #218838; /* Verde más oscuro para el hover */
+}
+
+.create-button {
+    background-color: #28a745; /* Color verde */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 16px; /* Tamaño del texto */
+}
+
+.create-button:hover {
+    background-color: #218838; /* Verde más oscuro para el hover */
+}
+
+.update-button {
+    background-color: #28a745; /* Color verde */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Tamaño del texto */
+}
+
+.update-button:hover {
+    background-color: #218838; /* Verde más oscuro para el hover */
+}
+
+.cancel-button {
+    background-color: #dc3545; /* Color rojo para cancelar */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Tamaño del texto */
+}
+
+.cancel-button:hover {
+    background-color: #c82333; /* Rojo más oscuro para el hover */
+}
+
+.ficha-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Añadir margen superior a la tabla */
+}
+
+.ficha-table th, .ficha-table td {
+    border: 1px solid #ddd;
+    padding: 10px; /* Espacio en las celdas */
+    text-align: left;
+}
+
+.ficha-table th {
+    background-color: #f4f4f4;
+    font-weight: bold; /* Hacer que el texto en los encabezados sea más prominente */
+}
+.mensaje-exito {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #d4edda;
+    color: #155724;
+    padding: 20px;
+    border: 2px solid #c3e6cb;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    z-index: 1000;
+}
+
+.mensaje-exito .icono-exito {
+    margin-right: 10px;
+    color: green;
+    font-size: 2rem;
+}

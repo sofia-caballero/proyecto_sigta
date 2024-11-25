@@ -1,0 +1,170 @@
+/* Estilo para el contenedor de la página */
+
+
+/* Estilo para la barra de búsqueda */
+.search-bar {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center; /* Alinea el input y el botón verticalmente */
+}
+
+.search-bar input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para el input */
+}
+
+/* Estilo para los botones de búsqueda y creación */
+.search-button, .create-button {
+    padding: 10px 20px; /* Ajustado para un mejor tamaño */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 5px;
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.search-button {
+    background-color: #4caf50; /* Verde constante */
+    color: white;
+}
+
+.search-button:hover {
+    background-color: #45a049; /* Verde más oscuro al pasar el ratón */
+}
+
+.create-button {
+    background-color: #4caf50; /* Verde constante */
+    color: white;
+}
+
+.create-button:hover {
+    background-color: #45a049; /* Verde más oscuro al pasar el ratón */
+}
+
+/* Estilo para la tabla de instructores */
+.instructor-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Añadido margen superior */
+    margin-bottom: 50px; /* Añadido margen inferior para separación visual */
+    
+    border: 2px solid #4caf50; /* Borde verde para resaltar la tabla */
+    background-color: #ffffff; /* Fondo blanco para un contraste más fuerte */
+    border-radius: 8px; /* Bordes redondeados para una apariencia moderna */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+}
+
+.instructor-table th, .instructor-table td {
+    border: 1px solid #4caf50;
+    padding: 14px;
+    text-align: left;
+}
+
+.instructor-table th {
+    background-color: #4caf50; /* Fondo verde para el encabezado de la tabla */
+    color: #fff;
+}
+
+.instructor-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Fondo gris claro para filas pares */
+}
+
+.instructor-table tr:hover {
+    background-color: #e8f5e9; /* Fondo verde claro al pasar el ratón */
+}
+
+/* Estilo para los formularios */
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input, form select {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para los inputs */
+}
+
+form button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #4caf50; /* Verde constante */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+form button:hover {
+    background-color: #45a049; /* Verde más oscuro al pasar el ratón */
+}
+.error-message {
+    color: red;
+    background-color: white;
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.success-message {
+    color: green;
+    background-color: white;
+    border: 1px solid green;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: rgb(171, 242, 161);
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    max-width: 45%; /* Ajusta el ancho máximo del modal */
+    max-height: 70%; /* Ajusta la altura máxima del modal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-image {
+    width: auto;
+    height: 80vh; /* Controla la altura de la imagen */
+    max-width: 90%; /* Controla el ancho máximo de la imagen */
+    object-fit: contain; /* Asegura que la imagen se ajuste proporcionalmente */
+}
+
+
+
+

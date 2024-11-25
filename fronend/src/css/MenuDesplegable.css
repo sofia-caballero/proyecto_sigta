@@ -1,0 +1,84 @@
+/* src/css/MenuDesplegable.css */
+
+/* Estilo para el contenedor del menú */
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    height: 100%;
+    width: 250px; 
+    background-color: #56b845;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    box-shadow: 2px 0 10px rgba(27, 26, 26, 0.107); 
+    border-right: 1px solid rgba(28, 26, 26, 0.067);
+}
+
+
+.menu-title {
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Estilos para el menú */
+.menu {
+    padding: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 15px 0;
+}
+
+.menu ul li a {
+    color: #f9fafae5; /* Color de texto */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 100px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: calc(110% - 30px); /* Ajusta el ancho dejando un margen para el padding */
+    max-width: 400px; /* Puedes limitar el ancho máximo */
+    box-sizing: border-box; /* Asegura que el padding y el ancho no se sobrepongan */
+}
+
+.menu ul li a:hover {
+    background-color: #1d7a22; /* Fondo claro al pasar el ratón */
+    color: #e8f3f1; /* Texto verde oscuro cuando se resalta */
+}
+
+/* Estilos para el submenú (eliminado) */
+.menu ul ul {
+    display: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 15px; /* Indentación del submenú */
+}
+
+.menu li:hover > ul {
+    display: block; /* Muestra el submenú cuando se pasa el mouse sobre el ítem padre (si es necesario) */
+}
+
+.menu ul ul li {
+    margin: 2px; /* Ajusta el margen de los ítems del submenú */
+}
+
+.menu ul ul a {
+    padding: 8px 15px;
+    border-radius: 25px;
+}
+

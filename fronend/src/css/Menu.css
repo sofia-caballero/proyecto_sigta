@@ -1,0 +1,76 @@
+/* Estilo para la tabla de usuarios */
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 50px;
+    margin-bottom: 50px; 
+   
+    border: 2px solid #4caf50; 
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.user-table th, .user-table td {
+    border: 1px solid #4caf50;
+    padding: 14px;
+    text-align: left;
+}
+
+.user-table th {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.user-table tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+.user-table tr:hover {
+    background-color: #e8f5e9; 
+}
+
+/* Estilo para los botones de aceptar y rechazar */
+.edit-btn, .delete-btn {
+    border: none;
+    padding: 7px 14px; 
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 5px;
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.edit-btn {
+    background-color: #edf5ed;
+    color: #4caf50;
+}
+
+.edit-btn:hover {
+    background-color: #45a049; 
+    color: #fff; 
+}
+
+.delete-btn {
+    background-color: #f6efef;
+    color: #d92020;
+}
+
+.delete-btn:hover {
+    background-color: #d92020; /* Rojo oscuro al pasar el ratón */
+    color: #fff; /* Texto blanco en el hover */
+}
+
+/* Estilo para el contenedor del menú */
+.menu-page {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}

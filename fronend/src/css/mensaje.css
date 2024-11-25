@@ -1,0 +1,42 @@
+/* src/components/ErrorModal.css */
+
+/* Estilos para el encabezado del modal */
+.modal-header {
+    background-color: #a8f0b6; /* Fondo rojo claro */
+    color: #05580c; /* Texto rojo oscuro */
+    border-bottom: 1px solid #c6f5d6; /* Borde inferior */
+  }
+  
+  /* Estilos para el cuerpo del modal */
+  .modal-body {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #212529; /* Texto oscuro */
+    font-size: 16px; /* Tamaño de fuente estándar */
+    padding: 20px; /* Espaciado interno más amplio */
+    margin-bottom: 20px; /* Más espacio debajo del cuerpo del modal */
+  }
+  
+  /* Estilos para el pie del modal */
+  .modal-footer {
+    background-color: #f1f1f1; /* Fondo gris claro */
+    border-top: 1px solid #dee2e6; /* Borde superior */
+    padding: 20px; /* Aumenta el padding para más espacio */
+    text-align: right; /* Alineación a la derecha */
+  }
+  
+  /* Estilos para el botón de cerrar */
+  .btn-secondary {
+    background-color: #6c757d; /* Color gris */
+    color: white; /* Texto en blanco */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado más amplio */
+    font-size: 14px; /* Tamaño de texto del botón */
+    border-radius: 4px; /* Bordes ligeramente redondeados */
+  }
+  
+  /* Estilos de hover para el botón */
+  .btn-secondary:hover {
+    background-color: #5a6268; /* Color más oscuro en hover */
+    cursor: pointer; /* Cambia el cursor */
+  }
+  

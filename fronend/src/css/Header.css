@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  background-color: #4CAF50; 
+  
+}
+
+.logo1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff; 
+  font-family: 'Helvetica', sans-serif; 
+}
+
+.navigation a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ffffff; 
+  font-family: 'Helvetica', sans-serif; 
+}
+
+.navigation a:hover {
+  color: #a7e6a9; /* Naranja institucional SENA */
+}

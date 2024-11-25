@@ -1,0 +1,53 @@
+/* Login.css */
+.containerPrincipal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #50c556; /* Fondo general */
+}
+
+.containerSecundario {
+  background-color: #ffffff; /* Fondo del contenedor */
+  padding: 20px;
+  border-radius: 7px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 150%;
+  max-width: 400px; /* Ancho máximo del contenedor de Login */
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 200px; /* Ajusta el tamaño del logo según sea necesario */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+}
+
+.form-group input {
+  margin-bottom: -1px; /* Espacio entre campos de entrada y el siguiente elemento */
+}
+
+.btn {
+  margin-top: -8px; /* Espacio entre los botones */
+}
+
+.btn-secondary {
+  margin-top: -28px; /* Espacio entre el botón de 'Registrar Usuario' y el botón de 'Iniciar Sesión' */
+}
+
+/* Nuevo estilo para el botón de visibilidad de contraseña */
+.password-toggle-btn {
+  margin-top: 10px; /* Ajusta el espacio en la parte superior del botón de visibilidad de contraseña */
+}

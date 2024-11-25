@@ -1,0 +1,102 @@
+/* Estilos generales para la sección */
+.welcome-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #f0f4f8;
+  color: #333;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Contenido textual más elevado */
+.welcome-content {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-90px); /* Elevar el contenido textual */
+}
+
+.welcome-content h1 {
+  font-size: 3rem;
+  color: #134d13;
+  margin-bottom: 20px;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.welcome-content p {
+  font-size: 1.25rem;
+  color: #000000;
+  line-height: 1.6;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Imagen sin contorno y movida más a la izquierda */
+.welcome-image {
+  max-width: 40%;
+  animation: fadeIn 2s ease-in-out;
+  position: relative;
+  left: -300px; /* Mover la imagen más a la izquierda */
+}
+
+.welcome-image img {
+  max-width: 160%;
+  border-radius: 0; /* Sin borde redondeado */
+  transform: scale(1);
+  animation: floating 3s ease-in-out infinite; /* Movimiento constante */
+}
+
+/* Animación de movimiento constante */
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Animaciones de aparición */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .welcome-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .welcome-content {
+    max-width: 100%;
+    margin-bottom: 30px;
+    transform: translateY(-20px); /* Ajustar elevación en pantallas pequeñas */
+  }
+
+  .welcome-image {
+    max-width: 80%;
+    left: 0; /* Quitar desplazamiento hacia la izquierda en pantallas pequeñas */
+  }
+}
+

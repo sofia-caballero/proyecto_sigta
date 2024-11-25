@@ -1,0 +1,16 @@
+/* src/css/Footer.css */
+.footer {
+  background-color: #1c6d1e; /* Color de fondo oscuro */
+  color: #fff;            /* Color del texto blanco */
+  text-align: center;     /* Centrar el texto */
+  padding: 20px;          /* Espaciado interior */
+  position: fixed;        /* Fijar en la parte inferior */
+  bottom: 0;              /* Ubicar en la parte inferior */
+  width: 100%;            /* Ancho completo */
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.footer p {
+  margin: 0;              /* Eliminar margen */
+  font-size: 14px;        /* Tamaño de fuente */
+}

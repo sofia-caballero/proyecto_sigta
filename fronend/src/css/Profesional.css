@@ -1,0 +1,15 @@
+/* src/css/Profesional.css */
+.professional {
+    display: flex;
+}
+
+.main {
+    margin-left: 250px; /* Espacio suficiente para el menú desplegable */
+    padding: 200px;
+    flex: 1;
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 20px;
+}

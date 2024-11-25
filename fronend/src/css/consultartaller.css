@@ -1,0 +1,226 @@
+/* Estilo para el contenedor de la página */
+.container {
+    padding: 20px; 
+    margin-top: 50px; /* Añadido margen superior para separación visual */
+    overflow-x: auto; /* Permite el desplazamiento horizontal si la tabla es más ancha que el contenedor */
+}
+
+/* Estilo para la tabla de talleres */
+.estructura-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border: 2px solid #4caf50; /* Borde verde para resaltar la tabla */
+    background-color: #ffffff; /* Fondo blanco para un contraste más fuerte */
+    border-radius: 8px; /* Bordes redondeados para una apariencia moderna */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+}
+
+.estructura-table thead {
+    background-color: #4caf50; /* Fondo verde para el encabezado de la tabla */
+    color: white;
+}
+
+.estructura-table th, 
+.estructura-table td {
+    padding: 14px; /* Ajustado para mayor consistencia */
+    border: 1px solid #4caf50; /* Borde verde en todas las celdas */
+    text-align: left;
+}
+
+.estructura-table th {
+    border-left: 1px solid #ffffff; /* Separación blanca debajo del encabezado */
+}
+
+.estructura-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Fondo gris claro para filas pares */
+}
+
+.estructura-table tbody tr:hover {
+    background-color: #e8f5e9; /* Fondo verde claro al pasar el ratón */
+}
+
+/* Estilo para los botones de acción */
+.update-button,
+.save-button,
+.cancel-button {
+    background-color: #4caf50; /* Verde constante */
+    color: white;
+    padding: 10px 20px; /* Ajustado para un mejor tamaño */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+    margin-right: 5px;
+}
+
+.update-button:hover,
+.save-button:hover,
+.cancel-button:hover {
+    background-color: #45a049; /* Verde más oscuro al pasar el ratón */
+}
+
+/* Botón adicional para crear */
+.create-button {
+    background-color: #4caf50; /* Verde constante */
+    color: white;
+    padding: 10px 20px; /* Ajustado para un mejor tamaño */
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.create-button:hover {
+    background-color: #45a049; /* Verde más oscuro al pasar el ratón */
+}
+
+/* Estilo para el campo de búsqueda */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para el input */
+}
+
+.search-bar .search-button {
+    padding: 10px;
+    background-color: #4caf50; /* Verde constante */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+    margin-left: 10px;
+  
+}
+
+.search-bar .search-button:hover {
+    background-color: #45a049; /* Verde más oscuro al pasar el ratón */
+}
+
+.mensaje-exito {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #d4edda;
+    color: #155724;
+    padding: 20px;
+    border: 2px solid #c3e6cb;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    z-index: 1000;
+    max-width: 90%;
+    text-align: center;
+}
+
+.mensaje-exito .icono-exito {
+    margin-right: 10px;
+    color: green;
+    font-size: 2rem;
+}
+/* styles.css */
+.mensaje-exito {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.icono-exito {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+
+
+
+
+/* Estilos para el contenedor de la paginación */
+.pagination {
+    display: flex;
+    justify-content: center; /* Centrar los botones de paginación */
+    align-items: center;
+    margin: 20px 0; /* Espacio alrededor de la paginación */
+}
+
+/* Estilos para los botones de paginación */
+.pagination button {
+    background-color: #4caf50; /* Color de fondo consistente con el resto */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 15px; /* Espaciado interno */
+    margin: 0 5px; /* Espaciado entre botones */
+    border-radius: 8px; /* Bordes redondeados para un aspecto moderno */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Transición suave para el color */
+}
+
+/* Estilo para el botón deshabilitado */
+.pagination button:disabled {
+    background-color: #ccc; /* Color de fondo para deshabilitar */
+    cursor: not-allowed; /* Cambiar el cursor */
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+.pagination button:hover:not(:disabled) {
+    background-color: #45a049; /* Verde más oscuro al pasar el mouse */
+}
+
+/* Estilos para los números de página */
+.pagination span {
+    margin: 0 5px; /* Espaciado entre los números */
+    font-size: 16px; /* Tamaño de fuente */
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para la página activa */
+.pagination .active {
+    font-weight: bold; /* Texto en negrita */
+    color: #fff; /* Color de texto */
+    background-color: #0056b3; /* Color de fondo activo */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px 15px; /* Espaciado interno */
+}
+
+
+
+/* Estilos para la tabla y el ordenamiento */
+.estructura-table th {
+    position: relative;
+    padding-right: 20px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s ease;
+}
+
+
+
+.estructura-table th span {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+
